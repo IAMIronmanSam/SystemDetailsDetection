@@ -1,0 +1,45 @@
+<html>
+	<head>
+	<script type="text/javascript">
+		//var OSName="Unknown OS";
+		//if (navigator.appVersion.indexOf("Win")!=-1) OSName="Windows";
+		//console.log(OSName);
+		//document.getElementById('OS').innerHTML=OSName;
+		//console.log(navigator.userAgent);
+		//Browser Detection
+		var isIE = false;
+	    var isFF = false;
+	    var isOP = false;
+	    var isSafari = false;    
+        var val = navigator.userAgent.toLowerCase();
+         console.log("Browser Name:");  
+       if(val.indexOf("firefox") > -1)
+       {
+          
+           console.log("firefox");
+       } 
+       else if(val.indexOf("opera") > -1)
+       {
+          console.log("opera");
+       }
+       else if(val.indexOf("msie") > -1)
+       {
+          
+            console.log("Internet Explore");
+      } 
+       else if(val.indexOf("safari") > -1)
+       {
+       
+           console.log("safari/Chrome");
+       } 
+        
+        // OS Detection
+       
+    
+	</script>	
+	</head>
+	<body>
+		<h1>Detect Settings</h1>
+		<div id="OS"></div>
+	</body>
+</html>
